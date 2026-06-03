@@ -1,0 +1,13 @@
+h1 {
+    text-align: center;
+}
+
+p {
+    display: inline-block;
+    margin: 0% 20%;
+    text-align: justify;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: normal;
+    font-style: normal;
+}
