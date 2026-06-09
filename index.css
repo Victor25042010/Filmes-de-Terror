@@ -6,6 +6,10 @@
 
 body {
     background-image: url(imgs/ChatGPT\ Image\ 27\ de\ mai.\ de\ 2026\,\ 14_33_54.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    background-size: cover;     
+    background-position: center;
 }
 
 
