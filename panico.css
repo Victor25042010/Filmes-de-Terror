@@ -1,15 +1,31 @@
 body{
-    text-align: center;
     margin-left:5%;
     margin-right:5%;
+    background-color: black;
 }
 h1{
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    font-family: "Unbounded", sans-serif;
 }
 
-p {
+.sinopse {
   font-family: "Montserrat", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 20;
+  font-weight: 30;
   font-style: normal;
+  color: white;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+.estrela{
+    color: yellow;
+}
+h2{
+    color: white;
+    font-family: "Unbounded", sans-serif;
+}
+.poster{
+    width: 300px;
+    height: auto;
+    float: right;
+    margin-left: 15px;
 }
