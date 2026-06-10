@@ -10,62 +10,90 @@
     <link href="https://fonts.googleapis.com/css2?family=Creepster&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <h1 id="easterEgg">🎥 Filmes de Terror</h1>
-        <nav>
-            <a href="biografia.html">Biografia</a>
-            <a href="creditos.html">Créditos</a>
-        </nav>
-    </header>
-    <section class="sobre-site">
-        <h2>Sobre o Projeto</h2>
-        <p>
-            Este site foi desenvolvido como um trabalho semestral
-            com o objetivo de apresentar reviews e informações
-            sobre filmes de terror famosos.
-        </p>
-        <p>
-            Cada câmera leva para uma página diferente
-            com conteúdos sobre os filmes.
-        </p>
-        <p>
-            Além disso, o site possui um easter egg escondido...
-            mas ninguém encontrou ainda 👀
-        </p>
-    </section>
-    <video id="videoSecreto">
-        <source src="segredo.mp4" type="video/mp4">
-    </video>
-    <div class="cameras">
-        <a href="panico.html" class="camera-box">
-            <div class="camera-top">
-                <span class="rec">● REC</span>
-                <span>CAM 01</span>
-            </div>
-            <img src="imgs/Camera Panico.jpeg">
-        </a>
-        <a href="annabelle.html" class="camera-box">
-            <div class="camera-top">
-                <span class="rec">● REC</span>
-                <span>CAM 02</span>
-            </div>
-            <img src="imgs/Camera Anna.jpeg">
-        </a>
-        <a href="It_A_Coisa.html" class="camera-box">
-            <div class="camera-top">
-                <span class="rec">● REC</span>
-                <span>CAM 03</span>
-            </div>
-            <img src="imgs/Camera It.jpg">
-        </a>
-        <a href="cam4.html" class="camera-box">
-            <div class="camera-top">
-                <span class="rec">● REC</span>
-                <span>CAM 04</span>
-            </div>
 
-            <img src="imgs/Camera S13.jpeg">
-        </a>
-    </div>
+<header>
+    <h1 id="easterEgg">🎥 Filmes de Terror</h1>
+    <nav>
+        <a href="biografia.html">Biografia</a>
+        <a href="creditos.html">Créditos</a>
+    </nav>
+</header>
+
+<section class="sobre-site">
+    <h2>Sobre o Projeto</h2>
+    <p>
+        Este site foi desenvolvido como um trabalho semestral
+        com o objetivo de apresentar reviews e informações
+        sobre filmes de terror famosos.
+    </p>
+    <p>
+        Cada câmera leva para uma página diferente
+        com conteúdos sobre os filmes.
+    </p>
+    <p>
+        Além disso, o site possui um easter egg escondido...
+        mas ja acharam... so não sobreviveram! 👀
+    </p>
+</section>
+
+<video id="videoSecreto">
+    <source src="segredo.mp4" type="video/mp4">
+</video>
+
+<div class="cameras">
+    <a href="panico.html" class="camera-box">
+        <div class="camera-top">
+            <span class="rec">● REC</span>
+            <span>CAM 01</span>
+        </div>
+        <img src="imgs/Camera panico.jpeg">
+    </a>
+
+    <a href="annabelle.html" class="camera-box">
+        <div class="camera-top">
+            <span class="rec">● REC</span>
+            <span>CAM 02</span>
+        </div>
+        <img src="imgs/Camera Anna.jpeg">
+    </a>
+
+    <a href="It_A_Coisa.html" class="camera-box">
+        <div class="camera-top">
+            <span class="rec">● REC</span>
+            <span>CAM 03</span>
+        </div>
+        <img src="imgs/Camera chuck.jpeg">
+    </a>
+
+    <a href="cam4.html" class="camera-box">
+        <div class="camera-top">
+            <span class="rec">● REC</span>
+            <span>CAM 04</span>
+        </div>
+        <img src="imgs/Camera S13.jpeg">
+    </a>
+</div>
+
+<button id="faca">🔪</button>
+
+<div id="videoModal">
+    <button id="fecharVideo">✖</button>
+
+    <iframe
+        id="youtubePlayer"
+        src=""
+        frameborder="0"
+        allow="autoplay; encrypted-media"
+        allowfullscreen>
+    </iframe>
+</div>
+
+<footer class="footer">
+    <div>© 2026 Todos os direitos reservados.</div>
+    <div>Diretrizes de Uso | Política de Privacidade | Termos de Serviço</div>
+</footer>
+
+<script src="index.js"></script>
+
 </body>
 </html>
