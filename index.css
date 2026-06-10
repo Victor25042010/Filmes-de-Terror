@@ -4,35 +4,144 @@
     box-sizing:border-box;
 }
 
-body {
-    background-image: url(imgs/ChatGPT\ Image\ 27\ de\ mai.\ de\ 2026\,\ 14_33_54.png);
-    background-repeat: no-repeat;
-    background-attachment: fixed; 
-    background-size: cover;     
-    background-position: center;
+html{
+    font-size:16px;
 }
 
+body{
+    min-height:100vh;
+
+    background-image:url("imgs/ChatGPT Image 27 de mai. de 2026, 14_33_54.png");
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+    background-attachment:fixed;
+
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+header{
+    width:100%;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    flex-wrap:wrap;
+
+    gap:15px;
+
+    padding:20px;
+
+    background:rgba(0,0,0,.85);
+
+    border-bottom:2px solid red;
+}
+
+header h1{
+    color:white;
+    cursor:pointer;
+
+    font-size:clamp(1.2rem, 3vw, 2.2rem);
+}
+
+nav{
+    display:flex;
+    gap:20px;
+    flex-wrap:wrap;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    font-weight:bold;
+
+    font-size:clamp(0.9rem, 2vw, 1.1rem);
+}
+
+nav a:hover{
+    color:red;
+}
+
+.sobre-site{
+    width:90%;
+    max-width:1200px;
+
+    margin:30px auto;
+
+    padding:25px;
+
+    background:rgba(0,0,0,.75);
+
+    border:2px solid red;
+    border-radius:15px;
+
+    color:white;
+
+    text-align:center;
+
+    box-shadow:
+    0 0 15px rgba(0,0,0,.7);
+}
+
+.sobre-site h2{
+    margin-bottom:15px;
+
+    font-size:2rem;
+
+    color:red;
+}
+
+.sobre-site p{
+    font-size:1.1rem;
+
+    line-height:1.7;
+
+    margin-bottom:10px;
+}
+
+.cameras{
+    width:100%;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    gap:30px;
+
+    padding:40px;
+
+    flex-wrap:nowrap;
+}
 
 .camera-box{
-    width:600px;
-    height:350px;
+    width:500px;
+    aspect-ratio:16/9;
 
-    border:10px solid #2d2d2d;
-    border-radius:20px;
+    border:8px solid #2d2d2d;
+    border-radius:18px;
 
     overflow:hidden;
-
     position:relative;
+
+    background:black;
 
     cursor:pointer;
 
-    box-shadow:
-        0 0 20px rgba(0,0,0,.8),
-        0 0 50px rgba(0,0,0,.5);
+    transition:.3s;
 
-    background:black;
+    box-shadow:
+    0 0 15px rgba(0,0,0,.8),
+    0 0 30px rgba(0,0,0,.5);
+
+    text-decoration:none;
+    color:white;
+
+    flex-shrink:0;
 }
 
+.camera-box:hover{
+    transform:scale(1.02);
+}
 
 .camera-top{
     position:absolute;
@@ -41,17 +150,20 @@ body {
     left:0;
 
     width:100%;
-    padding:10px 15px;
+
+    padding:10px;
 
     display:flex;
     justify-content:space-between;
+    align-items:center;
 
-    background:rgba(0,0,0,.7);
+    background:rgba(0,0,0,.75);
 
     color:white;
-    font-weight:bold;
 
     z-index:5;
+
+    font-size:clamp(.8rem,2vw,1rem);
 }
 
 .rec{
@@ -65,21 +177,83 @@ body {
     object-fit:cover;
 }
 
-
-#animacao{
+#animacao,
+#videoSecreto{
     position:fixed;
 
-    top:0;
-    left:0;
+    inset:0;
 
-    width:100%;
-    height:100%;
+    width:100vw;
+    height:100vh;
 
     object-fit:cover;
 
-    background:black;
-
     display:none;
 
-    z-index:999;
+    z-index:9999;
+
+    background:black;
+}
+
+@media (max-width:1700px){
+
+    .cameras{
+        flex-wrap:wrap;
+    }
+}
+
+@media (max-width:768px){
+
+    header{
+        flex-direction:column;
+        text-align:center;
+    }
+
+    nav{
+        justify-content:center;
+    }
+
+    .cameras{
+        padding:20px;
+        gap:20px;
+
+        flex-wrap:wrap;
+    }
+
+    .camera-box{
+        width:100%;
+        max-width:500px;
+
+        border-width:5px;
+    }
+}
+
+@media (max-width:480px){
+
+    header{
+        padding:15px;
+    }
+
+    nav{
+        flex-direction:column;
+        gap:10px;
+    }
+
+    .camera-top{
+        padding:8px;
+        font-size:0.8rem;
+    }
+
+    .sobre-site{
+        width:95%;
+        padding:20px;
+    }
+
+    .sobre-site h2{
+        font-size:1.5rem;
+    }
+
+    .sobre-site p{
+        font-size:1rem;
+    }
 }
