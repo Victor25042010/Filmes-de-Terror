@@ -1,21 +1,3 @@
-const aparecerDepois = 10000; // 10s
-const tempoNaTela = 5000; // 5s
-
-const video = document.getElementById("jumpscare");
-
-video.style.display = "none";
-
-setTimeout(() => {
-    video.style.display = "block";
-    video.play();
-
-    setTimeout(() => {
-        video.style.display = "none";
-        video.pause();
-    }, tempoNaTela);
-
-}, aparecerDepois);
-
 function iniciarAnimacao(){
 
     const video = document.getElementById("animacao");
@@ -25,9 +7,32 @@ function iniciarAnimacao(){
     video.play();
 
     video.onended = () => {
-
         window.location.href = "https://seusite.com";
-
     };
+}
 
+const titulo = document.getElementById("easterEgg");
+const videoSecreto = document.getElementById("videoSecreto");
+
+let cliques = 0;
+
+titulo.addEventListener("click", () => {
+
+    cliques++;
+
+    if(cliques === 5){
+
+        videoSecreto.style.display = "block";
+        videoSecreto.play();
+
+        cliques = 0;
+
+        videoSecreto.onended = () => {
+            videoSecreto.style.display = "none";
+        };
+    }
+});
+
+function abrirPagina(pagina) {
+    window.location.href = pagina;
 }
