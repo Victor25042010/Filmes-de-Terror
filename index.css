@@ -39,7 +39,6 @@ header{
 
 header h1{
     color:white;
-    cursor:pointer;
 
     font-size:clamp(1.2rem, 3vw, 2.2rem);
 }
@@ -52,10 +51,14 @@ nav{
 
 nav a{
     color:white;
+
     text-decoration:none;
+
     font-weight:bold;
 
     font-size:clamp(0.9rem, 2vw, 1.1rem);
+
+    transition:.3s;
 }
 
 nav a:hover{
@@ -86,9 +89,17 @@ nav a:hover{
 .sobre-site h2{
     margin-bottom:15px;
 
-    font-size:2rem;
+    font-size:2.5rem;
 
     color:red;
+
+    font-family:'Creepster', cursive;
+
+    letter-spacing:3px;
+
+    text-shadow:
+    0 0 10px red,
+    0 0 20px darkred;
 }
 
 .sobre-site p{
@@ -115,12 +126,14 @@ nav a:hover{
 
 .camera-box{
     width:500px;
+
     aspect-ratio:16/9;
 
     border:8px solid #2d2d2d;
     border-radius:18px;
 
     overflow:hidden;
+
     position:relative;
 
     background:black;
@@ -134,6 +147,7 @@ nav a:hover{
     0 0 30px rgba(0,0,0,.5);
 
     text-decoration:none;
+
     color:white;
 
     flex-shrink:0;
@@ -177,7 +191,6 @@ nav a:hover{
     object-fit:cover;
 }
 
-#animacao,
 #videoSecreto{
     position:fixed;
 
@@ -206,6 +219,7 @@ nav a:hover{
 
     header{
         flex-direction:column;
+
         text-align:center;
     }
 
@@ -215,6 +229,7 @@ nav a:hover{
 
     .cameras{
         padding:20px;
+
         gap:20px;
 
         flex-wrap:wrap;
@@ -236,21 +251,24 @@ nav a:hover{
 
     nav{
         flex-direction:column;
+
         gap:10px;
     }
 
     .camera-top{
         padding:8px;
+
         font-size:0.8rem;
     }
 
     .sobre-site{
         width:95%;
+
         padding:20px;
     }
 
     .sobre-site h2{
-        font-size:1.5rem;
+        font-size:2rem;
     }
 
     .sobre-site p{
