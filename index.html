@@ -1,34 +1,78 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <link rel="icon" href="imgs/icone/faca-francesa.ico">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Filmes de Terror</title>
+
     <link rel="stylesheet" href="index.css">
 </head>
+
 <body>
-    <a href="https://www.youtube.com/watch?v=zLbrQjiHB_A" target="_blank">
-    <img src="imagem.png">
-</a>
 
-    <script src="script.js"></script>
-</video>
+    <header>
+        <h1 id="easterEgg">🎥 Filmes de Terror</h1>
+        <nav>
+            <a href="biografia.html">Biografia</a>
+            <a href="creditos.html">Créditos</a>
+        </nav>
+    </header>
+    <section class="sobre-site">
+        <h2>Sobre o Projeto</h2>
+        <p>
+            Este site foi desenvolvido como um trabalho semestral
+            com o objetivo de apresentar reviews e informações
+            sobre filmes de terror famosos.
+        </p>
+        <p>
+            Cada câmera leva para uma página diferente
+            com conteúdos sobre os filmes.
+        </p>
+        <p>
+            Além disso, o site possui um easter egg escondido...
+            mas ninguém encontrou ainda 👀
+        </p>
+    </section>
+    <video id="videoSecreto">
+        <source src="segredo.mp4" type="video/mp4">
+    </video>
+    <div class="cameras">
+        <a href="panico.html" class="camera-box">
 
-<div class="camera-box" onclick="iniciarAnimacao()">
+            <div class="camera-top">
+                <span class="rec">● REC</span>
+                <span>CAM 01</span>
+            </div>
+            <img src="imgs/Camera Panico.jpeg">
+        </a>
+        <a href="annabelle.html" class="camera-box">
+            <div class="camera-top">
+                <span class="rec">● REC</span>
+                <span>CAM 02</span>
+            </div>
+            <img src="imgs/Camera Anna.jpeg">
+        </a>
+        <a href="It_A_Coisa.html" class="camera-box">
+            <div class="camera-top">
+                <span class="rec">● REC</span>
+                <span>CAM 03</span>
+            </div>
+            <img src="imgs/Camera It.jpg">
+        </a>
 
-        <div class="camera-top">
-            <span class="rec">● REC</span>
-            <span>CAM 01</span>
-        </div>
-
-        <img src="camera.jpg" alt="Câmera de Segurança">
-
+        <a href="cam4.html" class="camera-box">
+            <div class="camera-top">
+                <span class="rec">● REC</span>
+                <span>CAM 04</span>
+            </div>
+            <img src="imgs/Camera S13.jpeg">
+        </a>
     </div>
 
     <video id="animacao">
         <source src="animacao.mp4" type="video/mp4">
     </video>
+    <script src="script.js"></script>
 
 </body>
 </html>
