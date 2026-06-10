@@ -1,14 +1,51 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Liu+Jian+Mao+Cao&display=swap');
 
+body {
+    background-image: url(imgs/BackgroundIT.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: white;
+}
+
 h1 {
+  display: flex;
   font-family: "Liu Jian Mao Cao", cursive;
-  font-weight: 400;
+  font-weight: 500;
   font-style: normal;
+  justify-content: center;
+  color: rgb(131, 5, 5);
+}
+
+h2 {
+  display: flex;
+  font-family: "Liu Jian Mao Cao", cursive;
+  font-weight: 600;
+  font-style: normal;
+  justify-content: center;
+  color: rgb(131, 5, 5);
 }
 
 p {
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
   font-style: normal;
+  justify-content: flex-start;
+}
+
+img {
+  width: 300px;
+  height: auto;
+  float: right;
+  margin-left: 15px;
+}
+
+.estrela {
+  color: yellow;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 5px;
 }
