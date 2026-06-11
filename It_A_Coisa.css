@@ -2,12 +2,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Liu+Jian+Mao+Cao&display=swap');
 
 body {
-    background-image: url(imgs/BackgroundIT.jpg);
+    background-image: url(imgs/It_2017.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
     color: white;
+    margin-left:5%;
+    margin-right:5%;
 }
 
 h1 {
@@ -29,17 +31,24 @@ h2 {
 }
 
 p {
+  display: flex;
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
   font-style: normal;
   justify-content: flex-start;
 }
 
-img {
+.Introducao {
+  display: flex;
+}
+
+#poster {
+  display: flex;
   width: 300px;
   height: auto;
   float: right;
   margin-left: 15px;
+  justify-content: flex-end;
 }
 
 .estrela {
@@ -49,3 +58,29 @@ img {
   justify-content: center;
   gap: 5px;
 }
+
+
+.backdrop {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 9999;
+  pointer-events: none;
+  transition: opacity 1s linear;
+  opacity: 1;
+  visibility: visible;
+}
+
+.desaparecido {
+  opacity: 0 !important;
+  visibility: hidden !important;
+  transition: opacity 1s linear, visibility 1s linear;
+}
+
+.backdrop video {
+  width: 100%;
+}
+
+
