@@ -10,19 +10,41 @@
 
     <h1>Bem-Vindo a Derry</h1>
 
+    <p><em>Não recomendado para menores de 16 anos.</em></p>
+
+    <div class="Introducao">
     <p> It - A Coisa, um grupo de sete adolescentes de Derry, uma cidade no Maine, formam o auto-intitulado "Losers Club" - o clube dos perdedores. 
         A pacata rotina da cidade é abalada quando crianças começam a desaparecer e tudo o que pode ser encontrado delas são partes de seus corpos. 
         Logo, os integrantes do "Losers Club" acabam ficando face a face com o responsável pelos crimes: o palhaço Pennywise.</p>
 
-    <img src="imgs/It_2017.jpg" alt="poster do filme It: A Coisa">
-   
+    <img id="poster" src="imgs/PosterIT.jpeg" alt="poster do filme It: A Coisa">
+    </div>
 
     <h2>Avaliação</h2>
-    <span class="estrela">&#9733;</span>
-    <span class="estrela">&#9733;</span>
-    <span class="estrela">&#9733;</span>
-    <span class="estrela">&#9733;</span>
-    <span class="estrela">&#9733;</span>
+    <div class="estrela">
+    <span>&#9733;</span>
+    <span>&#9733;</span>
+    <span>&#9733;</span>
+    <span>&#9733;</span>
+    <span>&#9733;</span>
+    </div> 
+
+
+    <aside id="lateral" class="backdrop">
+    <video src="Videos/Video It.mp4" autoplay muted>
+    </video>
+
+    <script>
+            // faz o vídeo desaparecer de leve assim que terminar
+    let tempo = 5000;  
+    setTimeout(() => {
+      // faz o vídeo desaparecer colocando a classe .desaparecido
+      document.querySelector('.backdrop').classList.add('desaparecido');
+      // faz o conteúdo principal surgir, retirando a classe .desaparecido
+      document.querySelector('main').classList.remove('desaparecido');
+    }, tempo);
+    </script>
+  
 </body>
 </html>
 
