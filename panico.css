@@ -3,7 +3,6 @@
     padding:0;
     box-sizing:border-box;
 }
-
 header{
     width:100%;
     display:flex;
@@ -38,7 +37,9 @@ nav a:hover{
 body{
     margin-left:5%;
     margin-right:5%;
-    background-color: black;
+    background-image: url("imgs/backgroundp.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 h1{
     color: white;
@@ -57,8 +58,14 @@ h1{
     color: yellow;
 }
 h2{
+    font-family: 'Nosifer', sans-serif;
+    color: red;
+    font-size: 40px;
+}
+h3 {
+    font-family: 'Unbounded', sans-serif;
     color: white;
-    font-family: "Unbounded", sans-serif;
+    font-size: 20px;
 }
 .poster{
     width: 300px;
