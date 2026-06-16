@@ -45,8 +45,6 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;
     color: white;
-    margin-left:5%;
-    margin-right:5%;
 }
 
 h1 {
@@ -56,6 +54,8 @@ h1 {
   font-style: normal;
   justify-content: center;
   color: rgb(131, 5, 5);
+  margin-top: 50px;
+  margin-bottom: 30px;
 }
 
 h2 {
@@ -73,6 +73,8 @@ p {
   font-weight: 400;
   font-style: normal;
   justify-content: flex-start;
+   margin-left:5%;
+  margin-right:5%;
 }
 
 .Introducao {
@@ -84,7 +86,7 @@ p {
   width: 300px;
   height: auto;
   float: right;
-  margin-left: 15px;
+  margin-right: 5%;
   justify-content: flex-end;
 }
 
@@ -119,3 +121,4 @@ p {
 .backdrop video {
   width: 100%;
 }
+
