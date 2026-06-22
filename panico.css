@@ -33,13 +33,39 @@ nav a{
 nav a:hover{
     color:red;
 }
+main {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 20px;
+}
+
+main h1 {
+    width: 100%;
+}
+
+.coluna-esquerda {
+    display: flex;
+    flex-direction: column;
+    width: 36%;
+}
+
+.coluna-direita {
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    margin-left: auto;
+    margin-right: 3%;
+}
+
 
 body{
     margin-left:5%;
-    margin-right:5%;
+    margin-right:0;
     background-image: url("imgs/backgroundp.webp");
     background-repeat: no-repeat;
     background-size: cover;
+    background-attachment: fixed;
+    min-height: 100vh;
 }
 h1{
     color: white;
@@ -53,13 +79,36 @@ h1{
   color: white;
   padding-left: 30px;
   padding-right: 30px;
+  width: 100%;
+}
+.avaliacao{
+  font-family: "Montserrat", sans-serif;
+  font-weight: 30;
+  font-style: normal;
+  color: white;
+  padding-left: 30px;
+  padding-right: 30px;
+  width: 100%;
+}
+.dados{
+  font-family: "Montserrat", sans-serif;
+    font-weight: 30;
+    font-style: normal;
+    color: white;
+    padding-left: 30px;
+    padding-right: 30px;
+    width: 100%;
+    text-align: justify;
+    margin-left: auto;
+    padding-top: 20px;
+    box-sizing: border-box;
 }
 .estrela{
     color: yellow;
 }
 h2{
     font-family: 'Nosifer', sans-serif;
-    color: red;
+    color: white;
     font-size: 40px;
 }
 h3 {
@@ -68,10 +117,9 @@ h3 {
     font-size: 20px;
 }
 .poster{
-    width: 300px;
+    width: 100%;
     height: auto;
-    float: right;
-    margin-left: 15px;
+    margin-bottom: 0px;
 }
 video {
         position: fixed;
@@ -89,5 +137,6 @@ video {
         }
         to {
             opacity: 0;
+            visibility: hidden;
         }
     }
