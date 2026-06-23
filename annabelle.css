@@ -23,6 +23,7 @@ header h1{
 nav{
     display:flex;
     gap:20px;
+    flex-wrap: wrap;
 }
 
 nav a{
@@ -46,7 +47,6 @@ main > h1 {
     text-align: center;
     font-family: "Nosifer", sans-serif;
     font-weight: 400;
-    font-style: normal;
     color: #b30000;
     margin-top: 20px;
 }
@@ -62,7 +62,6 @@ main > h1 {
     flex-direction: column;
     width: 35%;
     margin-left: auto;
-    margin-right: 0;
 }
 
 .sinopse p,
@@ -71,7 +70,6 @@ main > h1 {
     margin: 2% 8%;
     text-align: justify;
     font-family: "Montserrat", sans-serif;
-    font-weight: normal;
     color: #e0e0e0;
     font-size: 130%;
 }
@@ -121,4 +119,101 @@ a:hover{
     max-width: 300px;
     display: block;
     margin: 20px auto;
+}
+
+/* =========================
+   RESPONSIVIDADE
+   ========================= */
+
+/* 1. Telas grandes (TV / desktop wide) */
+@media (min-width: 1400px){
+    .coluna-esquerda{
+        width: 60%;
+    }
+
+    .coluna-direita{
+        width: 30%;
+    }
+
+    .sinopse p,
+    .avaliacao p{
+        font-size: 140%;
+    }
+
+    h1{
+        font-size: 42px;
+    }
+}
+
+/* 2. Desktop padrão / notebook */
+@media (max-width: 1200px){
+    .coluna-esquerda{
+        width: 58%;
+    }
+
+    .coluna-direita{
+        width: 38%;
+    }
+}
+
+/* 3. Tablet */
+@media (max-width: 900px){
+    main{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .coluna-esquerda,
+    .coluna-direita{
+        width: 100%;
+    }
+
+    .poster{
+        max-width: 250px;
+    }
+
+    nav{
+        justify-content: center;
+    }
+
+    header{
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+}
+
+/* 4. Celular */
+@media (max-width: 600px){
+    body{
+        margin-left:3%;
+        margin-right:3%;
+    }
+
+    h1{
+        font-size: 28px;
+    }
+
+    .sinopse p,
+    .avaliacao p{
+        font-size: 110%;
+        margin: 4% 5%;
+    }
+
+    h2{
+        font-size: 28px;
+    }
+
+    h3{
+        font-size: 18px;
+    }
+
+    nav{
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .poster{
+        max-width: 200px;
+    }
 }
