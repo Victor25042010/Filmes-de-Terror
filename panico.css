@@ -71,37 +71,47 @@ h1{
     color: white;
     font-family: "Unbounded", sans-serif;
 }
-
+p strong{
+    color: white;
+}
 .sinopse {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 30;
-  font-style: normal;
-  color: white;
-  padding-left: 30px;
-  padding-right: 30px;
-  width: 100%;
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    font-style: normal;
+    color: lightgray;
+    padding: 10px;
+    width: 100%;
+    border-radius: 20px;
+    border: 2px solid lightgray;
+  
 }
 .avaliacao{
   font-family: "Montserrat", sans-serif;
-  font-weight: 30;
+  font-weight: bold;
   font-style: normal;
-  color: white;
+  color: lightgray;
   padding-left: 30px;
   padding-right: 30px;
   width: 100%;
+  border-radius: 20px;
+  border: 2px solid lightgray;
 }
 .dados{
-  font-family: "Montserrat", sans-serif;
-    font-weight: 30;
+    font-family: "Montserrat", sans-serif;
     font-style: normal;
-    color: white;
+    color: lightgray;
+    font-weight: bold;
     padding-left: 30px;
     padding-right: 30px;
     width: 100%;
     text-align: justify;
     margin-left: auto;
-    padding-top: 20px;
     box-sizing: border-box;
+    border-radius: 20px;
+    border: 2px solid lightgray;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
 }
 .estrela{
     color: yellow;
@@ -117,9 +127,11 @@ h3 {
     font-size: 20px;
 }
 .poster{
-    width: 100%;
-    height: auto;
-    margin-bottom: 0px;
+  width: 100%;
+  height: auto;
+  margin-bottom: 0px;
+  border-radius: 20px;
+  border: 2px solid lightgray;
 }
 video {
         position: fixed;
