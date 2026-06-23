@@ -23,7 +23,7 @@ header h1{
 nav{
     display:flex;
     gap:20px;
-    flex-wrap: wrap;
+    flex-wrap:wrap;
 }
 
 nav a{
@@ -36,72 +36,97 @@ nav a:hover{
     color:red;
 }
 
-main {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: flex-start;
+main{
+    display:flex;
+    flex-wrap:wrap;
+    align-items:flex-start;
 }
 
-main > h1 {
-    width: 100%;
-    text-align: center;
-    font-family: "Nosifer", sans-serif;
-    font-weight: 400;
-    color: #b30000;
-    margin-top: 20px;
+main > h1{
+    width:100%;
+    text-align:center;
+    font-family:"Nosifer",sans-serif;
+    color:#b30000;
+    margin-top:20px;
+    font-size:40px;
 }
 
-.coluna-esquerda {
-    display: flex;
-    flex-direction: column;
-    width: 55%;
+.coluna-esquerda{
+    display:flex;
+    flex-direction:column;
+    width:55%;
+    gap:20px;
 }
 
-.coluna-direita {
-    display: flex;
-    flex-direction: column;
-    width: 35%;
-    margin-left: auto;
+.coluna-direita{
+    display:flex;
+    flex-direction:column;
+    width:35%;
+    margin-left:auto;
+}
+
+.sinopse,
+.avaliacao,
+.dados{
+    background:rgba(0,0,0,0.55);
+    border:2px solid #b30000;
+    border-radius:12px;
+    padding:20px;
 }
 
 .sinopse p,
-.avaliacao p{
-    display: inline-block;
-    margin: 2% 8%;
-    text-align: justify;
-    font-family: "Montserrat", sans-serif;
-    color: #e0e0e0;
-    font-size: 130%;
+.avaliacao p,
+.dados{
+    font-family:"Montserrat",sans-serif;
+    color:#e0e0e0;
+    font-size:120%;
+    line-height:1.6;
+    text-align:justify;
 }
 
 h2{
-    font-family: 'Nosifer', sans-serif;
-    color: white;
-    font-size: 40px;
-    text-align: center;
+    font-family:"Nosifer",sans-serif;
+    color:white;
+    font-size:32px;
+    text-align:center;
+    margin-bottom:10px;
 }
 
 h3{
-    font-family: 'Unbounded', sans-serif;
-    color: white;
-    font-size: 20px;
-    text-align: center;
+    font-family:"Unbounded",sans-serif;
+    color:white;
+    font-size:18px;
+    text-align:center;
+    margin:15px 0;
 }
 
 .estrela{
-    color: yellow;
-    font-size: 20px;
+    color:yellow;
+    font-size:20px;
 }
 
-.dados{
-    font-family: "Montserrat", sans-serif;
-    color: white;
-    margin: 20px 8%;
-    text-align: justify;
+.nota{
+    display:flex;
+    justify-content:center;
+    gap:5px;
+    padding:10px;
+    margin-top:10px;
+    background:rgba(255,255,255,0.05);
+    border:1px solid rgba(255,255,255,0.15);
+    border-radius:10px;
+}
+
+.poster{
+    width:100%;
+    max-width:300px;
+    display:block;
+    margin:20px auto;
+    border-radius:10px;
+    border:2px solid #b30000;
 }
 
 body{
-    background-color: #0a0a0a;
+    background-color:#0a0a0a;
     margin-left:5%;
     margin-right:5%;
 }
@@ -114,106 +139,56 @@ a:hover{
     color:#ff1a1a;
 }
 
-.poster{
-    width: 100%;
-    max-width: 300px;
-    display: block;
-    margin: 20px auto;
+@media (min-width:1400px){
+    .coluna-esquerda{width:60%;}
+    .coluna-direita{width:30%;}
+    main > h1{font-size:46px;}
 }
 
-/* =========================
-   RESPONSIVIDADE
-   ========================= */
-
-/* 1. Telas grandes (TV / desktop wide) */
-@media (min-width: 1400px){
-    .coluna-esquerda{
-        width: 60%;
-    }
-
-    .coluna-direita{
-        width: 30%;
-    }
-
-    .sinopse p,
-    .avaliacao p{
-        font-size: 140%;
-    }
-
-    h1{
-        font-size: 42px;
-    }
+@media (max-width:1200px){
+    .coluna-esquerda{width:58%;}
+    .coluna-direita{width:38%;}
 }
 
-/* 2. Desktop padrão / notebook */
-@media (max-width: 1200px){
-    .coluna-esquerda{
-        width: 58%;
-    }
-
-    .coluna-direita{
-        width: 38%;
-    }
-}
-
-/* 3. Tablet */
-@media (max-width: 900px){
+@media (max-width:900px){
     main{
-        flex-direction: column;
-        align-items: center;
+        flex-direction:column;
+        align-items:center;
     }
 
     .coluna-esquerda,
     .coluna-direita{
-        width: 100%;
-    }
-
-    .poster{
-        max-width: 250px;
-    }
-
-    nav{
-        justify-content: center;
+        width:100%;
     }
 
     header{
-        flex-direction: column;
-        gap: 10px;
-        text-align: center;
+        flex-direction:column;
+        gap:10px;
+    }
+
+    .poster{
+        max-width:260px;
     }
 }
 
-/* 4. Celular */
-@media (max-width: 600px){
+@media (max-width:600px){
     body{
         margin-left:3%;
         margin-right:3%;
     }
 
-    h1{
-        font-size: 28px;
+    main > h1{
+        font-size:28px;
     }
 
     .sinopse p,
-    .avaliacao p{
-        font-size: 110%;
-        margin: 4% 5%;
-    }
-
-    h2{
-        font-size: 28px;
-    }
-
-    h3{
-        font-size: 18px;
+    .avaliacao p,
+    .dados{
+        font-size:110%;
     }
 
     nav{
-        flex-direction: column;
-        gap: 10px;
-    }
-
-    .poster{
-        max-width: 200px;
+        flex-direction:column;
+        gap:10px;
     }
 }
