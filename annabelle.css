@@ -35,36 +35,76 @@ nav a:hover{
     color:red;
 }
 
-h1 {
+
+h1{
     text-align: center;
     font-family: "Nosifer", sans-serif;
     font-weight: 400;
     font-style: normal;
-    color: #b30000
+    color: #b30000;
+    margin-top: 20px;
 }
 
-article p {
+
+.sinopse p,
+.avaliacao p{
     display: inline-block;
     margin: 2% 8%;
     text-align: justify;
     font-family: "Montserrat", sans-serif;
-    font-optical-sizing: auto;
     font-weight: normal;
-    font-style: normal;
     color: #e0e0e0;
     font-size: 130%;
 }
 
-body {
+
+h2{
+    font-family: 'Nosifer', sans-serif;
+    color: white;
+    font-size: 40px;
+    text-align: center;
+}
+
+h3{
+    font-family: 'Unbounded', sans-serif;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+}
+
+
+.estrela{
+    color: yellow;
+    font-size: 20px;
+}
+
+
+.dados{
+    font-family: "Montserrat", sans-serif;
+    color: white;
+    margin: 20px 8%;
+    text-align: justify;
+}
+
+/* fundo estilo Pânico */
+body{
     background-color: #0a0a0a;
     margin-left:5%;
     margin-right:5%;
 }
 
-a {
-    color: #6a0dad;
+
+a{
+    color:#6a0dad;
 }
 
-a:hover {
-    color: #ff1a1a;
+a:hover{
+    color:#ff1a1a;
+}
+
+
+.poster{
+    width: 80%;
+    display: block;
+    margin: 20px auto;
 }
