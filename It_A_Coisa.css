@@ -65,6 +65,7 @@ h2 {
   font-style: normal;
   justify-content: center;
   color: rgb(131, 5, 5);
+  margin-bottom: 5px;
 }
 
 p {
@@ -73,12 +74,26 @@ p {
   font-weight: 400;
   font-style: normal;
   justify-content: flex-start;
-   margin-left:5%;
+  margin-left:5%;
   margin-right:5%;
 }
 
 .Introducao {
   display: flex;
+}
+
+#coluna-direita {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  margin-left: auto;
+  margin-right: 3%;
+}
+
+#coluna-esquerda {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
 }
 
 #poster {
@@ -87,6 +102,7 @@ p {
   height: auto;
   float: right;
   margin-right: 5%;
+  margin-bottom: 10px;
   justify-content: flex-end;
 }
 
@@ -96,6 +112,7 @@ p {
   flex-direction: row;
   justify-content: center;
   gap: 5px;
+  margin-bottom: 20px;
 }
 
 
@@ -112,13 +129,58 @@ p {
   visibility: visible;
 }
 
-.desaparecido {
-  opacity: 0 !important;
-  visibility: hidden !important;
-  transition: opacity 1s linear, visibility 1s linear;
-}
-
 .backdrop video {
   width: 100%;
 }
 
+.dados {
+  margin-left:5%;
+  margin-right:5%;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: justify;
+  border-radius: 20px;
+  border: 2px solid rgb(131, 5, 5);
+}
+
+.TitulosCriterios {
+  display: flex;
+  font-family: "Liu Jian Mao Cao", cursive;
+  font-weight: 600;
+  font-style: normal;
+  justify-content: flex-start;
+  color: rgb(131, 5, 5);
+  margin-left:5%;
+  margin-right:5%;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+.CriteriosAvaliacao {
+  border-radius: 20px;
+  border: 2px solid rgb(131, 5, 5);
+  margin-left:5%;
+  margin-right:5%;
+}
+
+video {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        object-fit: cover;
+        opacity: 1;
+        animation: transicao 1s ease 3s forwards;
+    }
+@keyframes transicao {
+        from {
+            opacity: 1;
+        }
+        to {
+            opacity: 0;
+            visibility: hidden;
+        }
+    }
