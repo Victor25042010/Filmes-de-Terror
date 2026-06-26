@@ -37,7 +37,7 @@
 </section>
 
 <video id="videoSecreto">
-    <source src="segredo.mp4" type="video/mp4">
+    <source src="Videos/jumpscare.mp4" type="video/mp4">
 </video>
 
 <div class="cameras">
@@ -73,19 +73,44 @@
         <img src="imgs/Camera S13.jpeg">
     </a>
 </div>
+<div class="tabela">
+    <h1>Notas dos Filmes Abordados</h1>
+    <p class="subtitulo">Classificação por nota segundo o IMDb</p>
+ 
+    <table>
+      <thead>
+        <tr>
+          <th>Filme</th>
+          <th>Nota</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>It: Bem vindos a Derry</td>
+          <td class="nota">7,9</td>
+        </tr>
+        <tr>
+          <td>Pânico</td>
+          <td class="nota">7,4</td>
+        </tr>
+        <tr>
+          <td>Sexta-Feira 13</td>
+          <td class="nota">6,4</td>
+        </tr>
+        <tr>
+          <td>Annabelle</td>
+          <td class="nota">5,5</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
 
 <button id="faca">🔪</button>
 
 <div id="videoModal">
     <button id="fecharVideo">✖</button>
 
-    <iframe
-        id="youtubePlayer"
-        src=""
-        frameborder="0"
-        allow="autoplay; encrypted-media"
-        allowfullscreen>
-    </iframe>
+    <video id="youtubePlayer" playsinline></video>
 </div>
 
 <footer class="footer">
