@@ -61,6 +61,7 @@ h1 {
   display: block;
   font-family: "Liu Jian Mao Cao", cursive;
   font-weight: 500;
+  font-size: 2.8rem;
   font-style: normal;
   color: rgb(131, 5, 5);
   margin-top: 50px;
@@ -68,10 +69,15 @@ h1 {
   text-align: center;
 }
 
+header h1 {
+  margin: 0;
+}
+
 h2 {
   display: block;
   font-family: "Liu Jian Mao Cao", cursive;
   font-weight: 600;
+  font-size: 1.9rem;
   font-style: normal;
   color: rgb(131, 5, 5);
   margin-bottom: 5px;
@@ -81,6 +87,7 @@ h2 {
 p {
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
+  font-size: 1.25rem;
   font-style: normal;
   margin-left:5%;
   margin-right:5%;
@@ -131,6 +138,10 @@ p {
   padding-top: 10px;
   padding-bottom: 10px;
   text-align: justify;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  font-style: normal;
   border-radius: 20px;
   border: 2px solid rgb(131, 5, 5);
 }
@@ -139,6 +150,7 @@ p {
   display: flex;
   font-family: "Liu Jian Mao Cao", cursive;
   font-weight: 600;
+  font-size: 1.9rem;
   font-style: normal;
   justify-content: flex-start;
   color: rgb(131, 5, 5);
@@ -153,6 +165,15 @@ p {
   border: 2px solid rgb(131, 5, 5);
   margin-left:5%;
   margin-right:5%;
+}
+
+.BalaoFlutuante {
+  margin-left:5%;
+  margin-right:5%;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 video {
