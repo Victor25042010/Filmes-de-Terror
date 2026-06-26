@@ -178,3 +178,52 @@ nav a:hover{
     justify-content:space-between;
     border-top:2px solid #333;
 }
+.tabela {
+    width: 100%;
+    max-width: 480px;
+    background-color: rgb(30, 30, 30);
+    border: 5px solid red;
+    border-radius: 5%;
+    margin: 30px auto 80px;
+    color: white;
+    padding: 10px;
+  }
+.subtitulo {
+    font-family: Arial, sans-serif;
+    font-size: 0.8rem;
+    text-align: center;
+    color: white;
+    padding: 5px;
+    border-bottom: 2px solid red;
+}
+.tabela table {
+    width: 100%;
+    table-layout: fixed;
+  }
+thead th {
+    font-family: Arial, sans-serif;
+    text-transform: uppercase;
+    text-align: left;
+    padding: 14px 20px;
+  }
+  thead th:first-child {
+    width: 70%;
+  }
+  thead th:last-child {
+    text-align: right;
+  }
+td.nota {
+    text-align: right;
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+    color: red;
+
+  }
+tbody tr:last-child td {
+    border-bottom: none;
+  }
+tbody td {
+    padding: 16px 20px;
+    font-size: 1.05rem;
+    color:  white;
+  }
