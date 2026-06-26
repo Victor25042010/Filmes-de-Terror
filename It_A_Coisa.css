@@ -38,6 +38,16 @@ nav a:hover{
     color:red;
 }
 
+.Principal {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 40px;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
 body {
     background-image: url(imgs/It_2017.jpg);
     background-size: cover;
@@ -48,62 +58,60 @@ body {
 }
 
 h1 {
-  display: flex;
+  display: block;
   font-family: "Liu Jian Mao Cao", cursive;
   font-weight: 500;
   font-style: normal;
-  justify-content: center;
   color: rgb(131, 5, 5);
   margin-top: 50px;
   margin-bottom: 30px;
+  text-align: center;
 }
 
 h2 {
-  display: flex;
+  display: block;
   font-family: "Liu Jian Mao Cao", cursive;
   font-weight: 600;
   font-style: normal;
-  justify-content: center;
   color: rgb(131, 5, 5);
   margin-bottom: 5px;
+  text-align: center;
 }
 
 p {
-  display: flex;
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
   font-style: normal;
-  justify-content: flex-start;
   margin-left:5%;
   margin-right:5%;
 }
 
 .Introducao {
   display: flex;
+  flex-direction: column;
 }
 
-#coluna-direita {
+.coluna-direita {
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
-  margin-left: auto;
-  margin-right: 3%;
+  gap: 20px;
+  align-items: center;
+  width: 300px;
 }
 
-#coluna-esquerda {
+.coluna-esquerda {
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  gap: 40px;
+  flex: 1;
 }
 
 #poster {
-  display: flex;
-  width: 300px;
+  display: block;
+  width: 100%;
   height: auto;
   float: right;
-  margin-right: 5%;
   margin-bottom: 10px;
-  justify-content: flex-end;
 }
 
 .estrela {
@@ -113,24 +121,6 @@ p {
   justify-content: center;
   gap: 5px;
   margin-bottom: 20px;
-}
-
-
-.backdrop {
-  position: fixed;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  z-index: 9999;
-  pointer-events: none;
-  transition: opacity 1s linear;
-  opacity: 1;
-  visibility: visible;
-}
-
-.backdrop video {
-  width: 100%;
 }
 
 .dados {
