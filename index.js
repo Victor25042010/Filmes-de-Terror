@@ -1,38 +1,40 @@
-const titulo = document.getElementById("easterEgg");
-const videoSecreto = document.getElementById("videoSecreto");
+const videoFaca = document.getElementById("youtubePlayer");
+const videoModal = document.getElementById("videoModal");
 
-let cliques = 0;
+function abrirJumpscare() {
+    videoFaca.pause();
+    videoFaca.removeAttribute("src");
+    videoFaca.load();
 
-titulo.addEventListener("click", () => {
-    cliques++;
+    videoModal.style.display = "flex";
 
-    if (cliques === 5) {
-        videoSecreto.style.display = "block";
-        videoSecreto.play();
+    videoFaca.src = "Videos/jumpscare.mp4";
+    videoFaca.controls = false;
 
-        cliques = 0;
+    const aoCarregar = () => {
+        videoFaca.currentTime = 12;
+        videoFaca.play().catch((erro) => {
+            console.log("Não foi possível iniciar o vídeo:", erro);
+        });
+    };
 
-        videoSecreto.onended = () => {
-            videoSecreto.style.display = "none";
-        };
-    }
-});
+    const aoAtualizarTempo = () => {
+        if (videoFaca.currentTime >= 14) {
+            videoFaca.pause();
+            videoModal.style.display = "none";
+            videoFaca.removeEventListener("timeupdate", aoAtualizarTempo);
+        }
+    };
 
-const youtubeURL = "https://www.youtube.com/watch?v=8KxkzngOGJY";
+    videoFaca.addEventListener("loadedmetadata", aoCarregar, { once: true });
+    videoFaca.addEventListener("timeupdate", aoAtualizarTempo);
+}
 
-document.getElementById("faca").addEventListener("click", () => {
-
-    const videoId = youtubeURL.includes("youtu.be/")
-        ? youtubeURL.split("youtu.be/")[1].split("?")[0]
-        : youtubeURL.split("v=")[1].split("&")[0];
-
-    document.getElementById("youtubePlayer").src =
-        `https://www.youtube.com/embed/${videoId}?autoplay=1`;
-
-    document.getElementById("videoModal").style.display = "flex";
-});
+document.getElementById("faca").addEventListener("click", abrirJumpscare);
 
 document.getElementById("fecharVideo").addEventListener("click", () => {
-    document.getElementById("videoModal").style.display = "none";
-    document.getElementById("youtubePlayer").src = "";
+    videoModal.style.display = "none";
+    videoFaca.pause();
+    videoFaca.removeAttribute("src");
+    videoFaca.load();
 });
