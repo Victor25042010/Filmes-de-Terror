@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>It: A Coisa</title>
     <link rel="stylesheet" href="It_A_Coisa.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
 <body>
@@ -105,13 +106,21 @@
                 </ul>
             </section>
 
-            <article class="BalaoFlutuante"><img src="imgs/BalaoIt.png" alt="balão flutuando"></article>
+            <button id="BalaoFlutuante"><img src="imgs/BalaoIt.png" alt="balão flutuando"></button>
+
+            <div id="videoModal">
+                <button id="fecharVideo">✖</button>
+
+                <video id="youtubePlayer" playsinline></video>
+            </div>
 
         </section>
 
-    <video src="Videos/Video It.mp4" autoplay muted></video>
+    <video id="VideoInicial" src="Videos/Video It.mp4" autoplay muted></video>
 
     </main>
+
+    <script src="It_A_Coisa.js"></script>
   
 </body>
 </html>
