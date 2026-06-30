@@ -8,12 +8,6 @@
   background-color: rgb(153, 31, 31);
 }
 
-#logo {
-  height: 1.2em;
-  width: auto;
-  margin-right: 5px;
-}
-
 header{
     width:100%;
     display:flex;
@@ -154,6 +148,26 @@ a:hover{
     color:#ff1a1a;
 }
 
+video {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        object-fit: cover;
+        opacity: 1;
+        animation: transicao 1s ease 3s forwards;
+    }
+@keyframes transicao {
+        from {
+            opacity: 1;
+        }
+        to {
+            opacity: 0;
+            visibility: hidden;
+        }
+    }
+
 @media (min-width:1400px){
     .coluna-esquerda{width:60%;}
     .coluna-direita{width:30%;}
@@ -177,8 +191,14 @@ a:hover{
     }
 
     header{
-        flex-direction:column;
-        gap:10px;
+    flex-direction:column;
+    gap:15px;
+    text-align:center;
+    }
+
+    nav{
+        justify-content:center;
+        flex-wrap:wrap;
     }
 
     .poster{
@@ -202,10 +222,10 @@ a:hover{
         font-size:110%;
     }
 
-    nav{
-        flex-direction:column;
-        gap:10px;
+    header h1{
+        font-size:1.5rem;
     }
+
 }
 .dados ul{
     list-style:none;
