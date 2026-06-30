@@ -8,6 +8,12 @@
   background-color: rgb(153, 31, 31);
 }
 
+#logo {
+  height: 1.2em;
+  width: auto;
+  margin-right: 5px;
+}
+
 body{
     background-color:#000;
     font-family:"Montserrat", sans-serif;
