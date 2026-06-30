@@ -70,6 +70,28 @@ nav a:hover{
     margin-bottom:10px;
     line-height:1.7;
 }
+#fnaf{
+    position:fixed;
+    inset:0;
+    width:70vw;
+    height:70vh;
+    pointer-events:none;
+    z-index:30;
+}
+
+#fnaf .fotofnaf{
+    pointer-events:auto;
+}
+#fnaf .fotofnaf{
+    position:absolute;
+    width: 70px;
+    height:70px;
+    object-fit:cover;
+    border-radius:10px;
+    border:3px solid white;
+    cursor:pointer;
+    z-index:10;
+}
 
 .cameras{
     display:flex;
