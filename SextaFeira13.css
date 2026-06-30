@@ -5,6 +5,16 @@
     font-family:Arial, Helvetica, sans-serif;
 }
 
+::selection {
+  background-color: rgb(153, 31, 31);
+}
+
+#logo {
+  height: 1.2em;
+  width: auto;
+  margin-right: 5px;
+}
+
 body{
     background:url("imgs/Sexta\ FEira\ 13.jpg") center/cover fixed;
     color:#fff;
