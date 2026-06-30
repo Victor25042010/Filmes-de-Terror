@@ -4,6 +4,10 @@
   margin-right: 5px;
 }
 
+::selection {
+  background-color: rgb(153, 31, 31);
+}
+
 header{
     width:100%;
     display:flex;
