@@ -66,9 +66,9 @@ main h1 {
 .coluna-direita {
     display: flex;
     flex-direction: column;
-    width: 25%;
+    width: 27%;
     margin-left: auto;
-    margin-right: 3%;
+    margin-right: 4%;
 }
 p{
     font-size: 18px;
@@ -90,30 +90,8 @@ h1{
 p strong{
     color: white;
 }
-.sinopse {
-    font-family: "Montserrat", sans-serif;
-    font-weight: bold;
-    font-style: normal;
-    color: lightgray;
-    padding: 10px;
-    width: 100%;
-    border-radius: 20px;
-    border: 2px solid lightgray;
-  
-}
-.avaliacao{
-  font-family: "Montserrat", sans-serif;
-  font-weight: bold;
-  font-style: normal;
-  color: lightgray;
-  padding-left: 30px;
-  padding-right: 30px;
-  width: 100%;
-  border-radius: 20px;
-  border: 2px solid lightgray;
-  padding-bottom: 10px;
-}
-.dados{
+
+.dados, .fatura, .avaliacao, .sinopse{
     font-family: "Montserrat", sans-serif;
     font-style: normal;
     color: lightgray;
