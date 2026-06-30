@@ -8,6 +8,12 @@
   background-color: rgb(153, 31, 31);
 }
 
+#logo {
+  height: 1.2em;
+  width: auto;
+  margin-right: 5px;
+}
+
 body{
     min-height:100vh;
     background-image:url("imgs/ChatGPT Image 27 de mai. de 2026, 14_33_54.png");
