@@ -41,10 +41,10 @@ document.getElementById("fecharVideo").addEventListener("click", () => {
 
 (function(){
   const imagens = [
-    "imgs/bonnie img.webp",
-    "imgs/chica img.png",
-    "imgs/freddy img.webp",
-    "imgs/foxy img.png",
+    "imgs/bonnie-img.webp",
+    "imgs/chica-img.png",
+    "imgs/freddy-img.webp",
+    "imgs/foxy-img.png",
   ];
 
   const stage   = document.getElementById('fnaf');
