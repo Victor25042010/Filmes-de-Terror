@@ -1,126 +1,154 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sexta-Feira 13</title>
+
     <link rel="stylesheet" href="SextaFeira13.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Creepster&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
 <header>
-    <h1>🎥 Blog do Medo</h1>
+
+    <div class="logo">
+        <h1>Blog do Medo</h1>
+    </div>
 
     <nav>
-            <a href="index.html">Camêras</a>
-            <a href="panico.html">Pânico</a>
-            <a href="annabelle.html">Annabelle</a>
-            <a href="It_A_Coisa.html">It: A Coisa</a>
-            <a href="SextaFeira13.html" class="atual">Sexta-Feira 13</a>
-            <a href="biografia.html">Biografia</a>
-            <a href="creditos.html">Créditos</a>
+        <a href="index.html">Câmeras</a>
+        <a href="panico.html">Pânico</a>
+        <a href="annabelle.html">Annabelle</a>
+        <a href="It_A_Coisa.html">IT: A Coisa</a>
+        <a href="SextaFeira13.html" class="atual">Sexta-Feira 13</a>
+        <a href="biografia.html">Biografia</a>
+        <a href="creditos.html">Créditos</a>
     </nav>
+
 </header>
 
 <main>
 
-    <section class="banner">
+    <section class="hero">
 
         <h2>Sexta-Feira 13</h2>
 
-        <img src="imgs/19962226.jpg" alt="Pôster do filme">
-
         <p>
-            Um clássico do terror que marcou gerações e apresentou um dos vilões mais famosos do cinema: Jason Voorhees.
+            Um dos maiores clássicos do terror slasher, responsável por apresentar ao mundo um dos personagens mais marcantes da história do cinema.
         </p>
 
     </section>
 
-    <section class="informacoes">
+    <section class="conteudo">
 
-        <h2>📖 Resumo do Filme</h2>
+        <aside class="coluna">
 
-        <p>
-            O filme se passa no acampamento Crystal Lake, onde uma série de eventos misteriosos e mortes brutais acontecem.
-            O terror aumenta quando a identidade do assassino começa a ser revelada ao longo da história.
-        </p>
+            <div class="card">
+
+                <h3>Resumo</h3>
+
+                <p>
+                    Crystal Lake volta a ser palco de acontecimentos misteriosos quando um grupo de jovens chega ao acampamento. O que parecia apenas um fim de semana tranquilo rapidamente se transforma em uma luta desesperada pela sobrevivência.
+                </p>
+
+            </div>
+
+            <div class="card">
+
+                <h3>Avaliação</h3>
+
+                <div class="estrelas">
+                    <span class="estrela" data-nota="1">★</span>
+                    <span class="estrela" data-nota="2">★</span>
+                    <span class="estrela" data-nota="3">★</span>
+                    <span class="estrela" data-nota="4">★</span>
+                    <span class="estrela" data-nota="5">★</span>
+                </div>
+
+                <p id="resultado">
+                    Clique nas estrelas para avaliar o filme.
+                </p>
+
+                <div class="classificacao">
+                    <img src="imgs/18+.png" alt="">
+                    <span>18 Anos</span>
+                </div>
+
+            </div>
+
+        </aside>
+
+        <section class="centro">
+
+            <img src="imgs/Sexta 13.jpg" alt="Jason">
+
+        </section>
+
+        <aside class="coluna">
+
+            <div class="card">
+
+                <h3>5 Tópicos</h3>
+
+                <ul>
+                    <li>Suspense constante.</li>
+                    <li>Crystal Lake.</li>
+                    <li>Atmosfera sombria.</li>
+                    <li>Reviravolta marcante.</li>
+                    <li>Clássico do terror.</li>
+                </ul>
+
+            </div>
+
+            <div class="card">
+
+                <h3>Elenco</h3>
+
+                <ul>
+                    <li>Adrienne King</li>
+                    <li>Betsy Palmer</li>
+                    <li>Kevin Bacon</li>
+                    <li>Harry Crosby</li>
+                    <li>Laurie Bartram</li>
+                </ul>
+
+            </div>
+
+            <div class="card">
+
+                <h3>Onde Assistir</h3>
+
+                <ul>
+                    <li>Prime Video</li>
+                    <li>Apple TV</li>
+                    <li>Google Play Filmes</li>
+                </ul>
+
+            </div>
+
+        </aside>
 
     </section>
 
-    <section class="curiosidades">
-
-        <h2>5 Tópicos do Filme</h2>
-
-        <ul>
-            <li>Suspense constante durante toda a trama</li>
-            <li>Cenário no acampamento Crystal Lake</li>
-            <li>Atmosfera sombria e tensão psicológica</li>
-            <li>Revelação surpreendente do assassino</li>
-            <li>Um dos maiores clássicos do terror slasher</li>
-        </ul>
-
-    </section>
-
-    <section class="informacoes">
-
-        <h2>Elenco e Atores</h2>
-
-        <ul>
-            <li>Adrienne King — Alice Hardy</li>
-            <li>Betsy Palmer — Pamela Voorhees</li>
-            <li>Kevin Bacon — Jack Burrell</li>
-            <li>Harry Crosby — Bill Brown</li>
-            <li>Laurie Bartram — Brenda</li>
-        </ul>
-
-    </section>
-
-    <section class="informacoes">
-
-        <h2>Onde Assistir</h2>
-
-        <p>
-            O filme pode estar disponível em plataformas de streaming ou aluguel digital, dependendo da região.
-        </p>
-
-        <ul>
-            <li>Amazon Prime Video (aluguel)</li>
-            <li>Apple TV (compra ou aluguel)</li>
-            <li>Google Play Filmes</li>
-        </ul>
-
-        
-
-    </section>
-
-    <section class="avaliacao">
-
-        <h2>Avalie o Filme</h2>
-
-        <div class="estrelas">
-            <span class="estrela" data-nota="1">★</span>
-            <span class="estrela" data-nota="2">★</span>
-            <span class="estrela" data-nota="3">★</span>
-            <span class="estrela" data-nota="4">★</span>
-            <span class="estrela" data-nota="5">★</span>
-        </div>
-
-        <p id="resultado">Clique nas estrelas para avaliar o filme.</p>
-
-        <br>
-
-        <div class="classificacao">
-        <img src="imgs/NR18-AUTO.jpg" alt="Classificação 18 anos">
-        <span>Classificação: 18 anos</span>
-        </div>
-
-        <video src="Videos/WhatsApp Video 2026-06-24 at 14.14.53.mp4" autoplay muted></video>
-
-    </section>
 </main>
+
+<footer>
+
+    <p>Blog do Medo © 2026</p>
+
+</footer>
+
+<video autoplay muted>
+    <source src="Videos/WhatsApp Video 2026-06-24 at 14.14.53.mp4" type="video/mp4">
+</video>
 
 <script src="SextaFeira13.js"></script>
 
 </body>
+
 </html>
