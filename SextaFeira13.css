@@ -2,299 +2,195 @@
     margin:0;
     padding:0;
     box-sizing:border-box;
-}
-
-::selection {
-  background-color: rgb(153, 31, 31);
+    font-family:Arial, Helvetica, sans-serif;
 }
 
 body{
-    font-family: Arial, Helvetica, sans-serif;
-    color:white;
-    min-height:100vh;
-
-    background-image:url("imgs/images.jpg");
-    background-size:cover;
-    background-position:center;
-    background-repeat:no-repeat;
-    background-attachment:fixed;
+    background:url("imgs/Sexta\ FEira\ 13.jpg") center/cover fixed;
+    color:#fff;
 }
 
 body::before{
     content:"";
     position:fixed;
-    top:0;
-    left:0;
-    width:100%;
-    height:100%;
-    background:rgba(0,0,0,0.80);
+    inset:0;
+    background:rgba(0,0,0,.8);
     z-index:-1;
 }
 
 header{
-    width:100%;
+    background:#111;
+    border-bottom:2px solid darkred;
+    padding:20px;
     display:flex;
     justify-content:space-between;
     align-items:center;
-
-    padding:20px 5%;
-
-    background:rgba(0,0,0,0.90);
-    border-bottom:3px solid red;
+    flex-wrap:wrap;
 }
 
 header h1{
-    color:white;
-    font-size:2rem;
+    font-size:32px;
 }
 
 nav{
     display:flex;
-    gap:20px;
+    gap:10px;
+    flex-wrap:wrap;
 }
 
 nav a{
+    color:#fff;
     text-decoration:none;
-    color:white;
-    font-weight:bold;
-    transition:.3s;
+    padding:8px 14px;
+    border-radius:6px;
 }
 
-nav a:hover{
-    color:red;
-}
-
-nav a.atual {
-  background-color: rgb(250, 15, 15);
-  padding: 5px 10px;
+nav a:hover,
+nav .atual{
+    background:darkred;
 }
 
 main{
     max-width:1200px;
-    margin:auto;
-    padding:30px 20px;
+    margin:40px auto;
+    padding:0 20px;
 }
 
-.banner{
+.hero{
     text-align:center;
     margin-bottom:40px;
 }
 
-.banner h2{
-    color:red;
-    font-size:3rem;
+.hero h2{
+    font-size:50px;
+    color:#c40000;
+    margin-bottom:10px;
+}
+
+.hero p{
+    max-width:700px;
+    margin:auto;
+    line-height:1.7;
+}
+
+.conteudo{
+    display:grid;
+    grid-template-columns:1fr 1.3fr 1fr;
+    gap:20px;
+}
+
+.card{
+    background:#141414;
+    border:1px solid #444;
+    border-radius:10px;
+    padding:20px;
     margin-bottom:20px;
-    text-shadow:0 0 15px red;
 }
 
-.banner img{
-    width:100%;
-    max-width:350px;
-    border-radius:15px;
-    border:3px solid red;
-    box-shadow:0 0 25px red;
-}
-
-.banner p{
-    max-width:800px;
-    margin:25px auto;
-    line-height:1.8;
-    font-size:1.1rem;
-}
-
-.informacoes,
-.curiosidades,
-.avaliacao{
-    background:rgba(10,10,10,0.90);
-    border:1px solid rgba(255,0,0,.3);
-
-    padding:30px;
-    margin-bottom:30px;
-
-    border-radius:15px;
-
-    box-shadow:0 0 15px rgba(255,0,0,.2);
-}
-
-.informacoes h2,
-.curiosidades h2,
-.avaliacao h2{
-    color:red;
+.card h3{
+    color:#d60000;
     margin-bottom:15px;
 }
 
-.informacoes p{
-    margin-bottom:15px;
-    line-height:1.8;
-}
-
-.medo-container{
-    margin-top:20px;
-}
-
-.medo-container h3{
-    margin-bottom:10px;
-    color:white;
-}
-
-.barra-medo{
-    width:100%;
-    max-width:500px;
-    height:35px;
-
-    background:#333;
-    border-radius:30px;
-    overflow:hidden;
-}
-
-.nivel-medo{
-    width:80%;
-    height:100%;
-
-    background:red;
-
-    display:flex;
-    align-items:center;
-    justify-content:center;
-
-    font-weight:bold;
-}
-
-/* CURIOSIDADES */
-
-.curiosidades ul{
-    padding-left:25px;
-}
-
-.curiosidades li{
-    margin-bottom:10px;
+.card p,
+.card li{
     line-height:1.6;
 }
 
-/* AVALIAÇÃO */
+.card ul{
+    padding-left:20px;
+}
 
-.avaliacao{
-    text-align:center;
+.centro{
+    display:flex;
+    justify-content:center;
+    align-items:flex-start;
+}
+
+.centro img{
+    width:100%;
+    max-width:420px;
+    border-radius:10px;
+    border:2px solid darkred;
 }
 
 .estrelas{
-    font-size:3rem;
+    font-size:35px;
+    text-align:center;
     margin:15px 0;
 }
 
 .estrela{
-    color:gray;
+    color:#555;
     cursor:pointer;
-    transition:.3s;
 }
 
-.estrela:hover{
-    color:red;
-    transform:scale(1.2);
-}
-
+.estrela:hover,
 .estrela.ativa{
     color:red;
 }
 
 #resultado{
-    margin-top:15px;
-    font-size:1.1rem;
+    text-align:center;
+}
+
+.classificacao{
+    margin-top:20px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:10px;
+}
+
+.classificacao img{
+    width:45px;
+}
+
+video{
+    position:fixed;
+    inset:0;
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    animation:sumir 1s ease 3s forwards;
+}
+
+@keyframes sumir{
+    to{
+        opacity:0;
+        visibility:hidden;
+    }
 }
 
 footer{
+    background:#111;
+    border-top:2px solid darkred;
     text-align:center;
     padding:20px;
-
-    background:rgba(0,0,0,0.90);
-    border-top:2px solid red;
-
-    margin-top:30px;
+    margin-top:40px;
 }
 
-@media (max-width: 768px){
+@media(max-width:900px){
+
+    .conteudo{
+        grid-template-columns:1fr;
+    }
+
+    .centro{
+        order:-1;
+    }
 
     header{
-        flex-direction:column;
+        justify-content:center;
         gap:15px;
-        text-align:center;
     }
 
     nav{
         justify-content:center;
-        flex-wrap:wrap;
     }
 
-    .banner h2{
-        font-size:2rem;
+    .hero h2{
+        font-size:38px;
     }
 
-    .banner p{
-        font-size:1rem;
-    }
-
-    .estrelas{
-        font-size:2.2rem;
-    }
-
-    .informacoes,
-    .curiosidades,
-    .avaliacao{
-        padding:20px;
-    }
 }
-
-@media (max-width: 480px){
-
-    header h1{
-        font-size:1.5rem;
-    }
-
-    .banner h2{
-        font-size:1.7rem;
-    }
-
-    .banner img{
-        max-width:280px;
-    }
-}
-
-.classificacao{
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    gap:10px;
-
-    margin:10px 0 20px 0;
-}
-
-.classificacao img{
-    width:40px;
-    height:40px;
-}
-
-.classificacao span{
-    font-weight:bold;
-    color:red;
-}
-
-video {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100vw;
-        height: 100vh;
-        object-fit: cover;
-        opacity: 1;
-        animation: transicao 1s ease 3s forwards;
-    }
-    
-@keyframes transicao {
-        from {
-            opacity: 1;
-        }
-        to {
-            opacity: 0;
-            visibility: hidden;
-        }
-    }
